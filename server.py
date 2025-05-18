@@ -311,6 +311,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="google-site-verification" content="5CvI1z1MN1nf65qyNlxloDCemJ-EC5jXGCf0glG3l-I" />
             <title>FileServer - Home</title>
             <style>
                 :root {
@@ -608,6 +609,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="google-site-verification" content="5CvI1z1MN1nf65qyNlxloDCemJ-EC5jXGCf0glG3l-I" />
                 <title>File Browser - {path}</title>
                 <style>
                     :root {{
@@ -1006,6 +1008,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="google-site-verification" content="5CvI1z1MN1nf65qyNlxloDCemJ-EC5jXGCf0glG3l-I" />
             <title>FileServer Login</title>
             <style>
                 body {{ background: #1e1e1e; color: #d4d4d4; font-family: Consolas, monospace; }}
