@@ -24,7 +24,7 @@ A simple file server that allows you to browse and upload files from your local 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:cecamarty/FileServer.git
    cd <repository-directory>
    ```
 
