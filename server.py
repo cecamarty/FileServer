@@ -15,6 +15,10 @@ import string
 import getpass
 import secrets
 from http import cookies
+import colorama
+from colorama import Fore, Style
+
+colorama.init()
 
 def get_default_download_path():
     """Get the default downloads folder path"""
@@ -186,6 +190,24 @@ def get_file_icon(filename):
 local_ip = get_local_ip()
 server_url = f"http://{local_ip}:{PORT}"
 ascii_qr = generate_qr_code(server_url)
+
+def show_intro():
+    print(Fore.CYAN + r"""
+███████╗██╗██╗     ███████╗    ███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗ 
+██╔════╝██║██║     ██╔════╝    ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
+█████╗  ██║██║     █████╗      ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝
+██╔══╝  ██║██║     ██╔══╝      ╚════██║██╔══╝  ██╔══██╗██║   ██║██╔══╝  ██╔══██╗
+██║     ██║███████╗███████╗    ███████║███████╗██║  ██║╚██████╔╝███████╗██║  ██║
+╚═╝     ╚═╝╚══════╝╚══════╝    ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+    """ + Style.RESET_ALL)
+    time.sleep(2)  # Delay for 2 seconds
+    print(Fore.GREEN + "                      Lightweight Web-Based File Server | v1.0" + Style.RESET_ALL)
+    time.sleep(1)  # Delay for 1 second
+    print(Fore.YELLOW + "                      Author: Ham (https://github.com/cecamarty)" + Style.RESET_ALL)
+    time.sleep(1)  # Delay for 1 second
+    print(Fore.BLUE + "                     GitHub: https://github.com/cecamarty/FileServer" + Style.RESET_ALL)
+
+print_status("Author / Credits: Ham (https://github.com/cecamarty)", "info")
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, format, *args):
@@ -1011,7 +1033,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(html.encode())
 
 # Print server startup information
-print_header()
+show_intro()
 print_status(f"Server URL: {server_url}", "server")
 print_status(f"Root directory: {ROOT_DIRECTORY}", "file")
 print("\n📱 Scan this QR code to access the server from your mobile device:")

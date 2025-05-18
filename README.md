@@ -1,5 +1,14 @@
 # FileServer
 
+```
+███████╗██╗██╗     ███████╗    ███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗ 
+██╔════╝██║██║     ██╔════╝    ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
+█████╗  ██║██║     █████╗      ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝
+██╔══╝  ██║██║     ██╔══╝      ╚════██║██╔══╝  ██╔══██╗██║   ██║██╔══╝  ██╔══██╗
+██║     ██║███████╗███████╗    ███████║███████╗██║  ██║╚██████╔╝███████╗██║  ██║
+╚═╝     ╚═╝╚══════╝╚══════╝    ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+```
+
 A simple file server that allows you to browse and upload files from your local machine.
 
 ## Features
@@ -48,6 +57,10 @@ A simple file server that allows you to browse and upload files from your local 
 
 - The server uses the user's Downloads directory as the root directory by default.
 - You can set a password for access by entering it when prompted.
+
+## Author / Credits
+
+This project was created by Ham (https://github.com/cecamarty).
 
 ## License
 
